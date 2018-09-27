@@ -8,15 +8,15 @@
         <img src="../assets/logo.png" alt="People">
       </md-card-media>
       <md-card-header>
-        <div class="md-title"></div>
+        <div class="md-title">{{item.title}}</div>
       </md-card-header>
       <md-card-content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non, voluptas eius illo quas, saepe voluptate pariatur in deleniti minus sint. Excepturi.
+      {{item.content}}
       </md-card-content>
       <md-card-actions>
-        <md-button>Action</md-button>
+        <router-link :to="{name:'event-details',params: {id: item.id}}">Get Details</router-link>
       </md-card-actions>
-      </md-ripple>   
+      </md-ripple>    
     </md-card>
 </div> 
 </div>
