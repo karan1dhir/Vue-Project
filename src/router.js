@@ -19,7 +19,7 @@ export default new Router({
         component :() => import (/* webpackChunkName: "Event-List" */ './views/Event-List.vue') 
     },
     {
-      path : '/event-details/:id',
+      path : '/event-list/:id',
       name : 'event-details',
       component :() => import (/* webpackChunkName: "Event-List" */ './views/Details.vue') 
     }
